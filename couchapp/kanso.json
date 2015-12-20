@@ -1,0 +1,28 @@
+{
+    "name": "chat",
+    "version": "0.1.0",
+    "realname": "Chat",
+    "description": "A couchapp made to chat... relaxed on a couch.",
+    "attachments": ["static", "vendor"],
+    "dust": {
+        "templates": "templates"
+    },
+    "duality": {
+        "base_template": "base.html"
+    },
+    "load": "lib/app",
+    "modules": ["lib"],
+    "dependencies": {
+        "attachments": null,
+        "modules": null,
+        "properties": null,
+        "couchtypes": null,
+        "settings": null,
+        "duality": null,
+        "dust": null,
+        "duality-dust": null,
+        "kanso-topbar": null,
+        "users": null,
+        "session": null
+    }
+}
