@@ -23,7 +23,7 @@ exports.messages = {
             emit([doc.channel, doc._local_seq], doc);
         }
     },
-    reduce: _count
+    reduce: '_count'
 };
 
 exports.userProfile = {
