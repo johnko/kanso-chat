@@ -6,8 +6,8 @@ function couchapp_load(scripts) {
 
 couchapp_load([
     "./_couchdb/_utils/script/sha1.js",
-    /*"./_couchdb/_utils/script/json2.js",*/
-    /*"./_couchdb/_utils/script/jquery.js",*/
+    "./_couchdb/_utils/script/json2.js",
+    "./_couchdb/_utils/script/jquery.js",
     "./_couchdb/_utils/script/jquery.couch.js",
     "./vendor/couchapp/jquery.couch.app.js",
     "./vendor/couchapp/jquery.couch.app.util.js",

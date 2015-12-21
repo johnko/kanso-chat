@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Chat</title>
+
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./static/css/nav2.css" />
+    <link rel="stylesheet" type="text/css" href="./static/style/main.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="account"></div>
+        <h1>Chat</h1>
+        <h3 id="chandesc"></h3>
+    </div>
+    <div id="content">
+        <div id="sidebar">
+            <ul id="actions">
+                <li><a href="#mychans">My Channels</a></li>
+                <li><a href="#allchans">All Channels</a></li>
+                <li><a href="#new">New Channel</a></li>
+            </ul>
+            <ul id="channels"></ul>
+            <p>Powered by <a href="https://github.com/johnko/kanso-chat">Toast</a></p>
+        </div>
+        <div id="activity">
+            <div id="profile"></div>
+            <div id="chat"></div>
+        </div>
+        <br style="clear:both;"/>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- modules for require -->
+    <script src="./_ddoc/modules.js"></script>
+    <script>
+        // in case the above don't load
+        // redirect to _rewrite if we have no trailing slash
+        if (window.location.href.match(/\/_rewrite$/) !== null) location.href += '/';
+    </script>
+    <script src="./vendor/couchapp/loader.js"></script>
+    <script src="./vendor/couchapp/jquery.couch.app.account.js"></script>
+    <script src="./vendor/couchapp/jquery.couch.app.profile.js"></script>
+    <script src="./vendor/couchapp/jquery.pathbinder.js"></script>
+    <!-- bootstrap.min.js; requires jquery -->
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="./static/script/md5.js"></script>
+    <script src="./static/script/app.js"></script>
+</body>
+
+</html>
